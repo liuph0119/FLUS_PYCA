@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Configure>
+  <FilePaths>
+    <LandUseFilePath>D:/1_pycode_35x64/FLUS_PYCA/testdata/dg2001.tif</LandUseFilePath>
+    <ProbabilityFilePath>D:/1_pycode_35x64/FLUS_PYCA/testdata/probability.tif</ProbabilityFilePath>
+    <FeatureFilePaths>
+      <FeatureFilePath>D:/1_pycode_35x64/FLUS_PYCA/testdata/dem.tif</FeatureFilePath>
+      <FeatureFilePath>D:/1_pycode_35x64/FLUS_PYCA/testdata/distocity.tif</FeatureFilePath>
+      <FeatureFilePath>D:/1_pycode_35x64/FLUS_PYCA/testdata/distohighway.tif</FeatureFilePath>
+      <FeatureFilePath>D:/1_pycode_35x64/FLUS_PYCA/testdata/distorailway.tif</FeatureFilePath>
+      <FeatureFilePath>D:/1_pycode_35x64/FLUS_PYCA/testdata/distoroad.tif</FeatureFilePath>
+      <FeatureFilePath>D:/1_pycode_35x64/FLUS_PYCA/testdata/distotown.tif</FeatureFilePath>
+    </FeatureFilePaths>
+  </FilePaths>
+  <Sampling>
+    <Method>Random</Method>
+    <Ratio>0.01</Ratio>
+  </Sampling>
+  <NeuralNetwork>
+    <HiddenLayer>4</HiddenLayer>
+    <MaximumIteration>100</MaximumIteration>
+    <Alpha>1e-6</Alpha>
+    <LearningRate>0.1</LearningRate>
+  </NeuralNetwork>
+</Configure>

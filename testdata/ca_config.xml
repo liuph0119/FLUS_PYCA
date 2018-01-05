@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Configure>
+    <FilePaths>
+        <InitialLandUseFilePath>testdata/dg2001.tif</InitialLandUseFilePath>
+        <ProbabilityFilePath>testdata/probability.tif</ProbabilityFilePath>
+        <RestrictiveFilePath>testdata/restrictedarea.tif</RestrictiveFilePath>
+        <SimulationLandUseFilePath>testdata/dg2006_sim.tif</SimulationLandUseFilePath>
+    </FilePaths>
+
+    <SimulationParameters>
+        <NeighborSize>7</NeighborSize>
+        <Accelerate>0.1</Accelerate>
+        <MaxIterationNum>300</MaxIterationNum>
+        <ClassNum>5</ClassNum>
+
+
+        <NeighborWeights num = "5">
+            <ClassWeight>1</ClassWeight>
+            <ClassWeight>1</ClassWeight>
+            <ClassWeight>1</ClassWeight>
+            <ClassWeight>1</ClassWeight>
+            <ClassWeight>1</ClassWeight>
+        </NeighborWeights>
+
+        <CostMatrix num = "5">
+            <CostRow>1,0,0,0,0</CostRow>
+            <CostRow>1,1,0,0,0</CostRow>
+            <CostRow>1,1,1,1,1</CostRow>
+            <CostRow>1,1,1,1,1</CostRow>
+            <CostRow>1,1,1,1,1</CostRow>
+        </CostMatrix>
+        <!--target pixels-->
+        <CurrentAmounts num = "5">
+            <ClassAmount>46989</ClassAmount>
+            <ClassAmount>54427</ClassAmount>
+            <ClassAmount>59899</ClassAmount>
+            <ClassAmount>49516</ClassAmount>
+            <ClassAmount>38090</ClassAmount>
+        </CurrentAmounts>
+
+
+        <TargetAmounts num = "5">
+            <ClassAmount>80016</ClassAmount>
+            <ClassAmount>54230</ClassAmount>
+            <ClassAmount>43599</ClassAmount>
+            <ClassAmount>42433</ClassAmount>
+            <ClassAmount>28653</ClassAmount>
+        </TargetAmounts>
+    </SimulationParameters>
+
+</Configure>
